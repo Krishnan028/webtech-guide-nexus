@@ -35,8 +35,8 @@ const Index = () => {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Web Technology Guide</h1>
-          <p className="text-xl text-gray-600">Your comprehensive resource for learning web technologies</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Web Technology</h1>
+          <p className="text-xl text-gray-600">Krishnan.R - E22ASR028</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
