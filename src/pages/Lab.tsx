@@ -32,8 +32,8 @@ const Lab = () => {
 
           <div>
             <a
-              href=""
-              download="web-technology-lab-manual.pdf"
+              href="https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf"
+              download="https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf"
               className="inline-flex items-center gap-2 text-blue-700 hover:underline font-medium mt-2"
             >
               Click here to download the Lab Manual PDF directly
@@ -46,3 +46,10 @@ const Lab = () => {
 };
 
 export default Lab;
+
+
+
+
+
+
+
