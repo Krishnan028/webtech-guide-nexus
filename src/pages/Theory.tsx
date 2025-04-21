@@ -1,6 +1,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
 
-const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/materials/R15/3-2/Web%20Technologies.pdf") => {
+// Configure PDF.js worker path
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+const Theory = () => {
   const chapters = [
     {
       id: 1,
@@ -38,7 +44,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
 • CSS:
   - Three ways to apply styles: inline, embedded, external
   - Style rules have selectors and declarations
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-1.pdf" // Replace with actual PDF path
     },
     {
       id: 2,
@@ -86,7 +93,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
   - Client-side validation before submission
   - Checking for empty fields, valid formats
   - Example: validate email with regular expressions
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-2.pdf" // Replace with actual PDF path
     },
     {
       id: 3,
@@ -128,7 +136,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
 • Session Tracking:
   - Cookies: addCookie(), getCookies()
   - HttpSession: setAttribute(), getAttribute()
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-3.pdf" // Replace with actual PDF path
     },
     {
       id: 4,
@@ -174,7 +183,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
   - JDBC from JSP
   - Connection, Statement, ResultSet
   - Displaying query results in tables
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-4.pdf" // Replace with actual PDF path
     },
     {
       id: 5,
@@ -222,7 +232,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
   - <html:form>, <html:text>
   - <html:submit>, <html:errors>
   - Logic and bean tags
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-5.pdf" // Replace with actual PDF path
     },
     {
       id: 6,
@@ -269,7 +280,8 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
   - XMLHttpRequest object
   - Partial page updates
   - Enhanced user experience
-`
+`,
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-6.pdf" // Replace with actual PDF path
     }
   ];
 
@@ -287,9 +299,39 @@ const Theory = (url= "https://www.rgmcet.edu.in/assets/img/departments/CSE/mater
           </TabsList>
           {chapters.map((chapter) => (
             <TabsContent key={chapter.id} value={chapter.id.toString()}>
-              <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
                 <h2 className="text-2xl font-semibold text-blue-600 mb-4">{chapter.title}</h2>
-                <p className="text-gray-600 whitespace-pre-line">{chapter.content}</p>
+                <p className="text-gray-600 whitespace-pre-line mb-6">{chapter.content}</p>
+                
+                <div className="border-t pt-4">
+                  <h3 className="text-lg font-medium text-gray-800 mb-3">PDF Version</h3>
+                  <div className="border rounded-lg overflow-hidden">
+                    <Document
+                      file={chapter.pdfUrl}
+                      loading={<div className="p-4 text-center">Loading PDF...</div>}
+                      error={<div className="p-4 text-center text-red-500">Failed to load PDF</div>}
+                    >
+                      <Page 
+                        pageNumber={1} 
+                        width={600}
+                        renderTextLayer={false}
+                        renderAnnotationLayer={false}
+                      />
+                    </Document>
+                  </div>
+                  <div className="mt-2">
+                    <a 
+                      href={chapter.pdfUrl} 
+                      download 
+                      className="text-blue-600 hover:underline flex items-center"
+                    >
+                      <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      Download PDF
+                    </a>
+                  </div>
+                </div>
               </div>
             </TabsContent>
           ))}
