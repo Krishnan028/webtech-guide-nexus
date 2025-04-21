@@ -1,13 +1,10 @@
 
-<PdfViewer url="https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf" />
-
-
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const PdfViewer = ({ url }) => {
+const PdfViewer = ({ url= "https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf"}) => {
   const [numPages, setNumPages] = useState(null);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
