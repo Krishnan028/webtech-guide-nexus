@@ -41,7 +41,7 @@ const Theory = () => {
   - Three ways to apply styles: inline, embedded, external
   - Style rules have selectors and declarations
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-1.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-1.pdf"
     },
     {
       id: 2,
@@ -82,7 +82,7 @@ const Theory = () => {
   - Checking for empty fields, valid formats
   - Example: validate email with regular expressions
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-2.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-2.pdf"
     },
     {
       id: 3,
@@ -118,7 +118,7 @@ const Theory = () => {
   - Cookies: addCookie(), getCookies()
   - HttpSession: setAttribute(), getAttribute()
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-3.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-3.pdf"
     },
     {
       id: 4,
@@ -157,7 +157,7 @@ const Theory = () => {
   - Connection, Statement, ResultSet
   - Displaying query results in tables
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-4.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-4.pdf"
     },
     // Now split unit 5 and 6 as separate chapters:
     {
@@ -200,7 +200,7 @@ const Theory = () => {
   - <html:submit>, <html:errors>
   - Logic and bean tags
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-5.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-5.pdf"
     },
     {
       id: 6,
@@ -242,7 +242,7 @@ const Theory = () => {
   - Partial page updates
   - Enhanced user experience
 `,
-      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/blob/main/Unit-6.pdf"
+      pdfUrl: "https://github.com/Krishnan028/webtech-guide-nexus/raw/main/Unit-6.pdf"
     }
   ];
 
