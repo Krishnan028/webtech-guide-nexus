@@ -1,5 +1,5 @@
 
-import PdfViewer from 'https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf';
+import PdfViewer from '../components/PdfViewer';
 
 const Lab = () => {
   return (
