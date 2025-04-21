@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sora': ['Sora', 'sans-serif']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				"pastel-pink": "#FFDDEE",
+				"pastel-blue": "#D3E4FD",
+				"pastel-green": "#F2FCE2",
+				"pastel-cream": "#FEF7CD",
+			},
+			backgroundImage: {
+				'hero-gradient': 'linear-gradient(135deg,#fdfcfb 0%,#e2d1c3 100%)',
+				'soft': 'linear-gradient(102.3deg,rgba(147,39,143,1) 5.9%,rgba(234,172,232,1) 64%,rgba(246,219,245,1) 89%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
