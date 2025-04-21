@@ -5,18 +5,7 @@ const Theory = () => {
   const chapters = [
     {
       id: 1,
-      title: "Introduction to Web Technologies",
-      content: `Web technologies encompass the various tools and protocols used for communicating between computers over the internet. Key components include:
-
-• Client-side technologies (HTML, CSS, JavaScript)
-• Server-side technologies (Node.js, Python, PHP)
-• Web protocols (HTTP/HTTPS)
-• Web services and APIs
-• Database technologies`
-    },
-    {
-      id: 2,
-      title: "HTML Fundamentals",
+      title: "INTRODUCTION TO HTML",
       content: `HTML (HyperText Markup Language) is the standard markup language for creating web pages. Core concepts include:
 
 • Document structure and elements
@@ -26,19 +15,8 @@ const Theory = () => {
 • Multimedia elements`
     },
     {
-      id: 3,
-      title: "CSS and Styling",
-      content: `CSS (Cascading Style Sheets) controls the visual presentation of HTML elements. Key topics include:
-
-• Selectors and properties
-• Box model and layout
-• Flexbox and Grid
-• Responsive design
-• CSS animations`
-    },
-    {
-      id: 4,
-      title: "JavaScript Basics",
+      id: 2,
+      title: "JAVASCRIPT",
       content: `JavaScript is the primary programming language for web browsers. Essential concepts include:
 
 • Variables and data types
@@ -48,70 +26,37 @@ const Theory = () => {
 • Asynchronous programming`
     },
     {
+      id: 3,
+      title: "XML WEB SERVERS & SERVLETS",
+      content: `This unit covers XML web servers and servlet technology:
+
+• XML basics and syntax
+• Web server configuration
+• Servlet lifecycle and API
+• Handling HTTP requests and responses
+• Session management`
+    },
+    {
+      id: 4,
+      title: "JSP APPLICATION DEVELOPMENT",
+      content: `JSP (JavaServer Pages) for dynamic web applications:
+
+• JSP syntax and scripting elements
+• Directives, declarations, and expressions
+• JavaBeans integration
+• Error handling and debugging
+• MVC architecture with JSP`
+    },
+    {
       id: 5,
-      title: "Web Protocols and HTTP",
-      content: `Understanding web protocols is crucial for web development:
+      title: "STRUTS.DATABASE ACCESS & AJAX",
+      content: `Advanced web development with Struts and asynchronous programming:
 
-• HTTP methods (GET, POST, PUT, DELETE)
-• Status codes and headers
-• HTTPS and security
-• RESTful principles
-• WebSocket protocol`
-    },
-    {
-      id: 6,
-      title: "Server-Side Programming",
-      content: `Server-side programming handles business logic and data storage:
-
-• Server architectures
-• Request handling
-• Database interactions
-• Session management
-• API development`
-    },
-    {
-      id: 7,
-      title: "Database Integration",
-      content: `Databases are essential for storing and managing web application data:
-
-• Database types (SQL vs NoSQL)
-• CRUD operations
-• Data modeling
-• Query optimization
-• Database security`
-    },
-    {
-      id: 8,
-      title: "Web Security",
-      content: `Security is crucial for protecting web applications:
-
-• Common vulnerabilities (XSS, CSRF)
-• Authentication and authorization
-• Input validation
-• Security headers
-• SSL/TLS encryption`
-    },
-    {
-      id: 9,
-      title: "Web Services and APIs",
-      content: `Web services enable communication between different systems:
-
-• REST APIs
-• SOAP services
-• API authentication
-• Data formats (JSON, XML)
-• API documentation`
-    },
-    {
-      id: 10,
-      title: "Modern Web Frameworks",
-      content: `Modern frameworks accelerate web development:
-
-• React.js fundamentals
-• State management
-• Component architecture
-• Routing and navigation
-• Build tools and deployment`
+• Struts framework basics
+• Database integration and access
+• Form validation and tags
+• AJAX concepts and implementation
+• Enhancing user experience via asynchronous calls`
     }
   ];
 
@@ -142,3 +87,4 @@ const Theory = () => {
 };
 
 export default Theory;
+
