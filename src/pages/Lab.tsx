@@ -1,5 +1,5 @@
 
-import PdfViewer from '../components/PdfViewer';
+import PdfViewer from 'https://mrcet.com/pdf/Lab%20Manuals/WT%20LAB%20MANUAL.pdf';
 
 const Lab = () => {
   return (
@@ -15,11 +15,6 @@ const Lab = () => {
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
             <h2 className="text-xl font-semibold text-gray-800 mb-2">Lab Manual Units</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>INTRODUCTION TO HTML</li>
-              <li>JAVASCRIPT</li>
-              <li>XML WEB SERVERS & SERVLETS</li>
-              <li>JSP APPLICATION DEVELOPMENT</li>
-              <li>STRUTS.DATABASE ACCESS & AJAX</li>
             </ul>
           </div>
 
