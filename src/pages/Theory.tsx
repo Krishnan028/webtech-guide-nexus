@@ -49,10 +49,20 @@ const Theory = () => {
     },
     {
       id: 5,
-      title: "STRUTS.DATABASE ACCESS & AJAX",
-      content: `Advanced web development with Struts and asynchronous programming:
+      title: "STRUTS",
+      content: `Struts framework basics and configuration:
 
-• Struts framework basics
+• Struts framework overview
+• MVC architecture in Struts
+• Action classes and forms
+• Configuring struts-config.xml
+• Request processing lifecycle`
+    },
+    {
+      id: 6,
+      title: "DATABASE ACCESS & AJAX",
+      content: `Advanced web development with database integration and asynchronous programming:
+
 • Database integration and access
 • Form validation and tags
 • AJAX concepts and implementation
