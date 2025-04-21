@@ -13,7 +13,7 @@ const Lab = () => {
           </p>
           
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">Lab Manual Units</h2>
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">Lab Manual </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
             </ul>
           </div>
