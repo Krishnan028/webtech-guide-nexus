@@ -32,7 +32,7 @@ const Lab = () => {
 
           <div>
             <a
-              href="/lab-manual.pdf"
+              href=""
               download="web-technology-lab-manual.pdf"
               className="inline-flex items-center gap-2 text-blue-700 hover:underline font-medium mt-2"
             >
