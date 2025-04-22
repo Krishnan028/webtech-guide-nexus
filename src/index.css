@@ -7,64 +7,49 @@
 
 @layer base {
   :root {
-    --background: 245 23% 10%;   /* jazz midnight */
-    --foreground: 255 64% 92%;   /* soft mauve */
-    --card: 240 17% 14%;
-    --card-foreground: 47 97% 95%; /* light gold */
-    --popover: 250 15% 20%;
-    --popover-foreground: 255 64% 92%;
-    --primary: 282 71% 38%;      /* jazz purple */
-    --primary-foreground: 47 97% 95%;  /* gold */
-    --secondary: 263 30% 25%;  /* deep-dark purple */
-    --secondary-foreground: 37 85% 68%;
-    --muted: 260 36% 32%;
-    --muted-foreground: 263 30% 70%;
-    --accent: 43 96% 70%;       /* jazz gold */
-    --accent-foreground: 256 23% 14%;
-    --destructive: 348 81% 61%;
-    --destructive-foreground: 240 40% 98%;
-    --border: 270 23% 22%;
-    --input: 265 23% 17%;
-    --ring: 43 96% 70%;
-    --radius: 0.9rem;
-    --sidebar-background: 245 25% 10%;
-    --sidebar-foreground: 255 64% 92%;
-    --sidebar-primary: 282 71% 38%;
-    --sidebar-primary-foreground: 47 97% 95%;
-    --sidebar-accent: 43 96% 70%;
-    --sidebar-accent-foreground: 245 23% 10%;
-    --sidebar-border: 270 23% 22%;
-    --sidebar-ring: 43 96% 70%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 1rem;
   }
 
   .dark {
-    --background: 247 27% 7%;
-    --foreground: 47 97% 95%;
-    --card: 282 71% 18%;
-    --card-foreground: 47 97% 95%;
-    --popover: 282 71% 18%;
-    --popover-foreground: 47 97% 95%;
-    --primary: 282 71% 48%;
-    --primary-foreground: 245 23% 10%;
-    --secondary: 263 30% 22%;
-    --secondary-foreground: 47 97% 85%;
-    --muted: 260 36% 26%;
-    --muted-foreground: 282 11% 78%;
-    --accent: 46 96% 51%;
-    --accent-foreground: 282 71% 22%;
-    --destructive: 348 71% 46%;
-    --destructive-foreground: 47 97% 95%;
-    --border: 282 29% 17%;
-    --input: 265 23% 17%;
-    --ring: 46 96% 51%;
-    --sidebar-background: 247 27% 6%;
-    --sidebar-foreground: 47 97% 95%;
-    --sidebar-primary: 282 71% 48%;
-    --sidebar-primary-foreground: 245 23% 10%;
-    --sidebar-accent: 46 96% 51%;
-    --sidebar-accent-foreground: 282 71% 12%;
-    --sidebar-border: 282 29% 17%;
-    --sidebar-ring: 46 96% 51%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 1rem;
   }
 }
 
@@ -74,33 +59,5 @@
   }
   body {
     @apply bg-background text-foreground font-sora antialiased min-h-screen;
-    background: linear-gradient(120deg, #1a1f2c 0%, #7B1FA2 80%, #F7C873 100%);
-    /* fallback if gradient fails */
   }
 }
-
-/* Jazz glass styles for cards and popovers */
-.jazz-glass {
-  backdrop-filter: blur(12px);
-  background: rgba(34, 32, 64, 0.75);
-  border: 1.5px solid rgba(247,200,115,0.12);
-  box-shadow: 0 6px 32px 0 rgba(25,15,62,0.11);
-}
-
-.jazz-accent-img {
-  box-shadow: 0 4px 25px 2px #f7c87370;
-  border-radius: 48px;
-}
-
-.jazz-wave {
-  background: linear-gradient(90deg, #7B1FA2 10%, #F7C873 90%);
-  opacity: 0.26;
-  height: 200px;
-  width: 100vw;
-  position: absolute;
-  left: 0; right: 0;
-  bottom: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
